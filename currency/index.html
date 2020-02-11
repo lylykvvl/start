@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    -->
+    <title>currency</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container" id="exchanger1">
+        <header>
+            <form class="currency_form">
+                <label>Select currency exchange:</label>
+                 <select class="currency">
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="EUR">EUR</option>
+                    <option value="RUB">RUB</option>
+                </select>
+            </form>
+        </header> 
+
+        <section class="currencies">
+             <article class="currency_item ethereum ETH" data-symbol="ETH">
+                <header>Ethereum</header>
+                <img src="images/ethereum.png">
+                <div class="row_price">
+                    <div class="cell">Price:</div>
+                    <div class="cell high-price">$22596.92</div>
+                </div>
+                <div class="row">
+                    <div class="cell_percent_change">Percent change:</div>
+                    <div class="cell toggle"><input id="Toggle1" type="checkbox" class="toggle-price">
+                        <label for="Toggle1"><span></span></label></div>
+                </div>
+                <div class="row ">
+                <div class="cell_other_change">Hour_change</div>
+                <div class="cell_percent hour-percent">+266 %</div>
+            </div>
+                <div class="row ">
+                    <div class="cell_other_change">Day change</div>
+                    <div class="cell_percent day-percent">+266 %</div>
+                </div>
+                <div class="row ">
+                    <div class="cell_other_change">Week change</div>
+                    <div class="cell_percent week-percent">+266 %</div>
+                </div>
+                <div class="row ">
+                    <div class="cell_other_change">Month change</div>
+                    <div class="cell_percent month-percent">+266 %</div>
+                </div>
+            </article>
+
+            <article class="currency_item litecoin LTC" data-symbol="LTC">
+                <header>Litecoin</header>
+                <img src="images/3.png">
+                <div class="row_price">
+                    <div class="cell">Price:</div>
+                    <div class="cell high-price">$ 22596.92</div>
+                </div>
+                <div class="row ">
+                    <div class="cell_percent_change">Percent change:</div>
+                    <div class="cell toggle" ><input id="Toggle2" type="checkbox" class="toggle-price">
+                        <label for="Toggle2"><span></span></label></div>
+                </div>
+                <div class="row ">
+                    <div class="cell_other_change">Hour change</div>
+                    <div class="cell_percent hour-percent">+266 %</div>
+                </div>
+                <div class="row ">
+                    <div class="cell_other_change">Day change</div>
+                    <div class="cell_percent day-percent">+266 %</div>
+                </div>
+                <div class="row ">
+                    <div class="cell_other_change">Week change</div>
+                    <div class="cell_percent week-percent">+266 %</div>
+                </div>
+                <div class="row ">
+                    <div class="cell_other_change">Month change</div>
+                    <div class="cell_percent month-percent">+266 %</div>
+                </div>
+            </article>
+
+            <article class="currency_item bitcoin BTC" data-symbol="BTC">
+                <header>Bitcoin</header>
+                <img src="images/Bit.png">
+                <div class="row_price">
+                    <div class="cell">Price:</div>
+                    <div class="cell high-price">$22596.92</div>
+                </div>
+                <div class="row ">
+                    <div class="cell_percent_change">Percent change:</div>
+                    <div class="cell toggle" ><input id="Toggle3" type="checkbox" class="toggle-price">
+                        <label for="Toggle3"><span></span></label></div>
+                </div>
+                <div class="row ">
+                    <div class="cell_other_change">Hour change</div>
+                    <div class="cell_percent hour-percent">+266 %</div>
+                </div>
+                <div class="row ">
+                    <div class="cell_other_change">Day change</div>
+                    <div class="cell_percent day-percent">+266 %</div>
+                </div>
+                <div class="row ">
+                    <div class="cell_other_change">Week change</div>
+                    <div class="cell_percent week-percent">+266 %</div>
+                </div>
+                <div class="row ">
+                    <div class="cell_other_change">Month change</div>
+                    <div class="cell_percent month-percent">+266 %</div>
+                </div>
+            </article> 
+        </section>
+
+    </div>
+    <script src="scripts/jquery-3.4.0.min.js"></script>
+    <script src="scripts/jquery.cookie.js"></script>
+    <!-- <script src="scripts/json.js"></script> -->
+    <script src="scripts/exchanger.js"></script>
+    <script>
+        let exchanger = new Exchanger('#exchanger1');
+    </script>
+</body>
+</html>

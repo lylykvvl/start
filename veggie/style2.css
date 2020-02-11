@@ -1,0 +1,663 @@
+*{
+    box-sizing: border-box;
+
+}
+
+
+@fonts-face{
+    font-family: "Myriad Pro";
+    src: url('fonts/Myriad Pro.eot');
+    src: local('O'), url('fonts/Myriad Pro.woff') format('woff'), url('fonts/Myriad Pro.ttf') format('truetype'), url('fonts/Myriad Pro.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    margin: 0;
+}
+
+.container { }
+
+.container__header { }
+
+.header {
+    height: 965px;
+    background: url(vg_images/header/bg.jpeg) no-repeat;
+}
+
+.veg-block__info {
+    width: 33%;
+    float: right;
+    text-align: center;
+    }
+
+.info { }
+
+.info__menu {
+    margin: 53px 0 315px 0;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    font-family: "Myriad Pro", sans-serif;
+    align-items: center;}
+
+.menu__item {  }
+
+.menu__item_current {
+    border: 1px solid #3c3c3c;
+    padding: 16px 24px;}
+
+.menu__link {
+    text-decoration: none;
+    color: #3c3c3c;}
+
+.menu__link_current {  }
+
+.sandwich__checkbox{
+    display: none;
+}
+.info__heading { }
+
+.heading {
+    color: #3c3c3c;
+    font-size: 4rem;
+}
+
+.heading::after{
+    content: url(vg_images/header/line.png);
+    margin-top: 45px;
+    display: block;
+    /* font-size: 0.6rem; */
+}
+
+.container__veg-block {
+
+
+}
+
+.veg-block {
+    padding: 100px 0;
+    /* background-color: #f8f8f8; */
+    font-size: 1.6rem;
+    /* margin-top: -99px; */
+}
+
+.veg-block_bg_yellow {
+    background: #f7ce12;
+}
+
+.container__fixed {
+    /* min-height: 382px; */
+    max-width: 1520px;
+    /*outline: 1px solid red;*/
+    margin: 0 auto;
+    padding: 0 15px;
+    /* box-sizing: border-box; */
+
+}
+
+.layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* outline: 1px solid blue; */
+}
+
+
+
+.layout__cell {
+    width: 33.3%;
+
+    /* outline: 1px solid yellow; */
+    /* background: red; */
+}
+
+.proposition {
+    text-align: center;
+    /* width: 20%; */
+    /* outline: 1px solid blue; */
+    margin: 100px 0 88px 0;
+}
+
+.proposition__img1 {
+    width: 87px;
+    height: 79px;
+}
+.proposition__img2 {
+    width: 106px;
+    height: 68px;
+}
+.proposition__img3 {
+    width: 64px;
+    height: 76px;
+}
+
+.proposition__heading {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.proposition__text {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 1.6rem;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.veg-block__heading {
+    margin-top: 37px;
+
+}
+
+.heading {
+    text-align: center;
+}
+
+.specials {
+    display: flex;
+    /* align-items: center; */
+}
+
+.specials__img {
+    max-width: 50%;
+    /* height: 100px; */
+}
+
+.specials__about-dish {
+    display: flex;
+}
+
+.about-dish {
+    display: block;
+    background: #f8f8f8;
+    text-align: center;
+    /* width: 50%; */
+    /* height: 248px; */
+}
+
+.about-dish__heading {
+    font-family: "Maried Pro", sans-serif;
+    font-size: 1.8rem;
+    margin-top: 65px;
+}
+
+.about-dish__text {
+    font-family: "Maried Pro", sans-serif;
+    font-size: 1.6rem;
+}
+
+.about-dish__price {
+    font-family: "Maried Pro", sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.cell_reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.veg-block_bg_gray {
+    background: #eeefef;
+    height: 954px;
+}
+
+.veg-block_bg_about {
+    background-image: url(vg_images/about/about.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.about {
+    width: 38%;
+    text-align: center;
+}
+
+.veg-block__heading{
+    font-family: "Maried Pro", sans-serif;
+    font-size: 2.8rem;
+    margin-top: 80px;
+}
+
+.about__details {
+    margin-top: 248px;
+    font-family: "Maried Pro", sans-serif;
+    font-size: 2.8rem;
+
+}
+
+.about__sign {
+    background-image: url("vg_images/about/authoer.png");
+    width: 208px;
+    height: 143px;
+    float: right;
+}
+
+.veg-block__menu {
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.menu-dish{
+    align-items: baseline;
+    background: url(vg_images/menu/bg.png) repeat-x 0 14px;
+    margin-bottom: 20px;
+}
+
+.menu-dish__dots{
+    /* background: url(vg_images/menu/bg.png) repeat-x bottom; */
+    height: 2px;
+    /* outline: 1px solid red; */
+}
+
+.menu-dish__title{
+    width: 60%;
+    /* background-color: #f8f8f8; */
+}
+.menu-dish__dots{
+    /* width: 30%; */
+}
+.menu-dish__price{}
+
+.layout__cell_width50pc{
+    width: 45%;
+}
+
+.layout__cell_width100pc{
+    width: 100%;
+    margin-top: 82px;
+}
+
+.menu-dish__heading{
+    font-family: "Maried Pro", sans-serif;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    width: 95%;
+    background: #f8f8f8;
+    display: inline;
+}
+
+.menu-dish__details{
+    font-family: "Maried Pro", sans-serif;
+    font-size: 1.4rem;
+    font-style: italic;
+
+}
+
+.menu-dish__price{
+    font-family: "Maried Pro", sans-serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    width: auto;
+    background-color: #f8f8f8;
+}
+
+.footer{
+    background-image: url("vg_images/footer/background.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 1000px;
+    position: relative;
+}
+
+.info{
+    font-family: "Maried Pro", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 60px;
+    /* position: relative; */
+    /* background: red; */
+}
+
+.info__heading{
+    margin-top: 70px;
+}
+.layout__cell_width50pc{
+    text-align: left;
+    margin-top: 41px;
+    /* background: red; */
+}
+
+.footer__subheading{
+    font-family: "Maried Pro", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.footer__address1{
+    font-family: "Maried Pro", sans-serif;
+    font-size: 1.6rem;
+    text-transform: none;
+}
+
+.footer__address2{
+    font-family: "Maried Pro", sans-serif;
+    font-size: 1.6rem;
+    text-transform: none;
+    margin-top: 8px;
+}
+
+.footer__email{
+    font-family: "Maried Pro", sans-serif;
+    text-transform: none;
+    font-size: 1.6rem;
+}
+
+.footer__tel{
+    font-family: "Maried Pro", sans-serif;
+    font-size: 1.6rem;
+    text-transform: none;
+    margin-top: 8px;
+}
+
+
+
+.footer__copyright-socials{
+    position: absolute;
+    bottom: 33px;
+    margin: 0 -15px;
+    width: 100%;
+}
+
+.feedback__textfield{
+    border: 0;
+    border-bottom: 1px solid #000;
+    background: transparent;
+}
+
+.feedback__textfield_textarea{
+    resize: none;
+    width: 100%;
+}
+
+.feedback__textfield::-webkit-input-placeholder{
+    font-family: "Maried Pro", sans-serif;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.feedback__textfield::-moz-input-placeholder{
+    font-family: "Maried Pro", sans-serif;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+/*input[type=submit]*/
+.feedback__btn {
+    padding: 15px 27px;
+    margin-left: 170px;
+    background: #eeefef;
+    border: 1px solid #000000;
+    cursor:pointer;
+}
+
+.layout__cell{
+    font-family: "Maried Pro", sans-serif;
+    text-transform: none;
+    font-size: 1.4rem;
+}
+
+.socials{
+
+justify-content: flex-end;
+}
+
+.socials__item{
+
+margin-left: 14px;
+}
+
+.socials__link{
+    
+display: block;
+    
+width: 48px;
+    
+height: 48px;
+    
+border: 1px solid #6b6c6c;
+    
+line-height: 48px;
+    
+text-align: center;
+    
+color: #3c3c3c;
+}
+
+@media screen and (max-width: 1000px){
+    .veg-block__info{
+        
+width: 50%;
+        
+/* background: rgba(255,255,255,0.6); */
+    }
+    .veg-block{
+        padding: 50px 0;
+    }
+    .header {
+        background-position: -392px 0;
+    }
+    .menu__item{
+        margin: 0 5px;
+    }
+    .specials{
+        align-items: center;
+    }
+    .about-dish__heading{
+        margin-top: 0;
+    }
+    .veg-block_bg_about{
+        background-size: 50% auto;
+    }
+    .about__details{
+        margin-top: 100px;
+    }
+    .veg-block_bg_gray{
+        height: 760px;
+    }
+    .about__details{
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    .footer{
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-color: #eeefef;
+    }
+    .footer__info{
+        background: rgba(255,255,255,0.6);
+        padding: 20px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        background-position: -750px 0;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 179px;
+        margin-right: -2px;
+        margin-left: -3px;
+    }
+
+    .heading::after{
+        margin-bottom: 20px;
+    }
+
+    .veg-block__info {
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.85);
+        padding: 20px;
+        border: 1px solid #000;
+    }
+
+    .menu__item {
+        margin-bottom: 5px;
+    }
+
+    /* меню-сэндвич */
+    .sandwich {
+        display: inline-block;
+        cursor: pointer;
+        transition: opacity .15s linear;
+        position: absolute;
+        top: 0;
+        right: 0;
+        /* text-align: right; */
+    }
+
+    .sandwich-box {
+        position: relative;
+        width: 40px;
+        height: 24px;
+        float: right;
+    }
+
+    .sandwich-box__line, .sandwich-box__line:after, .sandwich-box__line:before {
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        transition: transform .15s ease-out;
+        border-radius: 4px;
+        background: #000;
+    }
+
+    .sandwich-box__line {
+        top: 50%;
+        display: block;
+        margin-top: -2px;
+    }
+
+    .sandwich-box__line:before {
+        top: 10px;
+        transition: transform .15s ease-out;
+    }
+
+    .sandwich-box__line:after {
+        top: 20px;
+        bottom: -10px;
+    }
+
+    .sandwich-box__line:after, .sandwich-box__line:before {
+        display: block;
+        content: "";
+    }
+
+    .sandwich__checkbox {
+        width: 40px;
+        height: 40px;
+        opacity: 0;
+        position: absolute;
+        z-index: 9999;
+        display: block;
+        right: 0;
+    }
+
+    .sandwich__checkbox:checked ~ .sandwich-box .sandwich-box__line:before {
+        transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+        opacity: 0;
+    }
+
+    .sandwich__checkbox:checked ~ .sandwich-box .sandwich-box__line:after {
+        transform: translate3d(0, -20px, 0) rotate(-90deg);
+    }
+
+    .sandwich__checkbox:checked ~ .sandwich-box .sandwich-box__line {
+        transform: translate3d(0, 10px, 0) rotate(45deg);
+    }
+
+    .sandwich__checkbox ~ .sandwich__menu {
+        display: none;
+    }
+
+    .sandwich__checkbox:checked ~ .sandwich__menu {
+        display: block;
+        margin: 20px 0 0 0;
+    }
+
+    .layout {
+        /* flex-direction: column; */
+    }
+
+    .layout__cell {
+        width: 90%;
+    }
+
+    .propositions {
+        align-items: center;
+        /* margin: 0 -15px; */
+        /* background: red; */
+    }
+
+    .about {
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+
+    .veg-block_bg_about {
+        background-image: none;
+        /* margin-top: -25px; */
+        /* margin-left: 0px; */
+    }
+
+    .menu-dish {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .menu-dish__title {
+        width: 100%; /* ? */
+    }
+
+    .menu-dish__price {
+        width: 5%;
+    }
+
+    .veg-block__info{
+        float: none;
+    }
+    .container__footer{
+
+    }
+    .footer__copyright-socials{
+    margin: 0;
+    position: static;
+    /* display: inline; */
+    }
+    .footer__copyright-socials_center{
+        /* display: inline-block; */
+        margin: 23px 0 0;
+    }
+    .layout__cell_center{
+    text-align: center;
+    margin: 0 auto;
+    }
+    .socials{
+        flex-direction: row;
+        justify-content: center;
+    }
+}

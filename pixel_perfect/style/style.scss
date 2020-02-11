@@ -1,0 +1,550 @@
+@font-face {
+  font-family: "Myriad Pro Bold";
+  src: url('../fonts/MyriadPro-Bold.otf');
+  font-style: normal;
+}
+@font-face {
+  font-family: "Myriad Pro Light";
+  src: url('../fonts/MyriadPro-Light.otf');
+  font-style: normal;
+}
+@font-face {
+  font-family: "Myriad Pro Regular";
+  src: url('../fonts/MyriadPro-Regular.otf');
+  font-style: normal;
+}
+
+@mixin about-product {
+  .names, .coloring, .price, .btn-buy {
+    font-family: "Myriad Pro Light", sans-serif;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: -2px;
+  }
+  .price {
+    font-family: "Myriad Pro Bold", sans-serif;
+    font-weight: bold;
+    margin: 7px 0 10px;
+  }
+  .btn-buy{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 124px;
+    height: 38px;
+    background: #1a90a2;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    font-family: "Myriad Pro Light", sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+body{
+  background: #f8f8f8;
+  background-size: cover;
+  margin: 0 auto;
+  height: 2700px;
+}
+
+.container__panel{
+  display: block;
+  background: url("../images/Slider.png") center top no-repeat;
+  max-width: 1920px;
+  height: 750px;
+}
+
+.container__fixed{
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo__brand{
+  display: block;
+  background-image: url("../images/logo-bg.png");
+  border: none;
+  width: 231px;
+  height: 48px;
+  margin-top: 40px;
+  outline: none;
+}
+
+.contacts{
+  display: flex;
+  margin: 26px 0 0 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.phone, .viber, .mail{
+  text-decoration: none;
+  font-family: "Myriad Pro Light", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  padding-right: 28px;
+  letter-spacing: 1px;
+}
+
+
+.mail{
+  margin-right: -3px;
+}
+
+.viber{
+  margin-right: 28px;
+}
+
+.phone{
+  margin-right: 25px;
+}
+
+.phone::before, .viber::before, .mail::before{
+  content: "";
+  background-image: url('../images/sprite.png');
+  background-position: 0 -1px;
+  display: block;
+  margin-left: -24px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+.phone::before{
+  width: 17px;
+  margin-left: -21px;
+}
+.viber::before{
+   background-position: 148px 0;
+  margin-top: -2px;
+  margin-right: 10px;
+ }
+.mail::before{
+  background-position: 67px 0;
+  margin: -4px 0 0 -28px;
+}
+
+.language{
+  font-family: "Myriad Pro Regular", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.change__lang-en, .change__lang-de{
+  display: inline-block;
+  width: 55px;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 3px;
+  text-align: center;
+}
+.change__lang-en{
+  background: #1a90a2;
+  margin-right: 6px;
+}
+.change__lang-de{
+  background: rgba(255,255,255,0.15);
+}
+.sandwich__checkbox {
+  display: none;
+}
+.menu{
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Myriad Pro Regular", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 31px;
+}
+
+.menu__link{
+  color: #ffffff;
+  text-decoration: none;
+  margin: -2px 0 0 0;
+  letter-spacing: 1px;
+}
+
+.home-page{
+  background-image: url('../images/sprite.png');
+  background-position: 106px 0;
+  display: block;
+  width: 19px;
+  height: 20px;
+  margin-right: 36px;
+  margin-top: -4px;
+}
+
+.blog{
+  margin-right: 40px;
+}
+
+.feedback{
+  margin-right: 33px;
+}
+
+.in-stock{
+  margin-right: 40px;
+}
+
+.sell-coats{
+  margin-right: 40px;
+
+}
+
+.sell-link::before{
+  content: "";
+  background-image: url("../images/sprite.png");
+  background-position: 30px 0;
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 20px;
+  margin: 14px 25px;
+}
+
+header .heading{
+  display: inline-block;
+  margin: 95px 0 0;
+  font-family: "Myriad Pro Bold", sans-serif;
+  font-size: 65px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  line-height: 80px;
+}
+
+.big__text{
+  font-family: "Myriad Pro Bold", sans-serif;
+  font-size: 85px;
+  letter-spacing: 5px;
+  margin-top: -10px;
+}
+
+.sub-heading{
+  margin-top: -10px;
+  letter-spacing: 3px;
+}
+.meta-menu{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 78px;
+}
+.sell-link, .top-brands-link{
+  display: block;
+  width: 209px;
+  height: 55px;
+  line-height: 55px;
+  box-sizing: border-box;
+  border: 2px solid #1a90a2;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Myriad Pro Regular", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.sell-link{
+  display: block;
+  width: 240px;
+  height: 55px;
+  line-height: 55px;
+  box-sizing: border-box;
+  background: #1a90a2;
+  margin-right: 30px;
+  box-shadow: 0 4px 12px rgba(26,144,162,0.4);
+  padding-left: 25px;
+}
+
+.content{
+  margin: 88px 0 0 0;
+}
+main .heading{
+  font-family: "Myriad Pro Regular", sans-serif;
+  font-size: 36px;
+  color: #3b3535;
+  text-transform: uppercase;
+  margin: -4px 0 -1px 9px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+main .heading::before{
+  content:"";
+  background-image: url("../images/sub-logo.png");
+  display: inline-block;
+  width:16px;
+  height:25px;
+  color: #1a90a2;
+  margin: 6px 10px 0 -2px;
+}
+
+.goods{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 101px;
+}
+.goods-item{
+  width: 24%;
+  border: 2px solid transparent;
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.goods-item_colspan{
+  width: 49.3%;
+}
+.goods-photo{
+  width: 100%;
+}
+.goods-item:hover{
+  border: 2px solid #1a90a2;
+}
+.goods-item::before{
+  content: "";
+  display: block;
+  opacity: 0;
+  position: absolute;
+}
+.goods-item:hover::before{
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0) 40%, rgba(26,144,162,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 40%,rgba(26,144,162,1) 100%);
+  background: linear-gradient(to bottom,  rgba(255,255,255,0) 40%,rgba(26,144,162,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#1a90a2',GradientType=0 );
+}
+
+.price::before{
+  content: "$";
+}
+
+.goods-item-info{
+  @include about-product();
+  position: absolute;
+  z-index: 3;
+  bottom: -15px;
+  width: 100%;
+  text-align: center;
+}
+
+.goods-item-info .names{
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .container__fixed{
+    padding: 0 15px;
+  }
+  .logo__brand {
+    display: flex;
+    background-image: url("../images/logo-bg.png");
+    width: 231px;
+    height: 48px;
+    margin-top: 40px;
+  }
+
+  .goods-item{
+    display: flex;
+    align-content: center;
+    width: 48%;
+    border: 2px solid transparent;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 40px;
+  }
+
+}
+@media screen and (max-width: 767px) {
+  header .heading{
+    margin-top: 50px;
+  }
+  .navbar{
+    flex-direction: column;
+  }
+  .meta-menu{
+    margin-top: 20px;
+  }
+  .goods-item{
+    display: flex;
+    align-content: center;
+    width: 48%;
+    border: 2px solid transparent;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 667px) {
+  .navbar{
+    flex-direction: row;
+  }
+  .navbar__cell{
+  }
+  .phone, .viber, .mail{
+    margin: 0 0 10px;
+    padding-right: 0;
+  }
+  .contacts{
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .sandwich {
+    display: inline-block;
+    cursor: pointer;
+    transition: opacity .15s linear;
+    float: right;
+  }
+
+  .sandwich-box {
+    position: relative;
+    width: 40px;
+    height: 24px;
+  }
+
+  .sandwich-box__line, .sandwich-box__line:after, .sandwich-box__line:before {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    transition: transform .15s ease-out;
+    border-radius: 4px;
+    background: #fff;
+  }
+
+  .sandwich-box__line {
+    top: 50%;
+    display: block;
+    margin-top: -2px;
+  }
+
+  .sandwich-box__line:before {
+    top: 10px;
+    transition-timing-function: ease;
+    transition-duration: .15s;
+    transition-property: transform,opacity;
+  }
+
+  .sandwich-box__line:after {
+    top: 20px;
+    bottom: -10px;
+  }
+
+  .sandwich-box__line:after, .sandwich-box__line:before {
+    display: block;
+    content: "";
+  }
+
+  .sandwich__checkbox{
+    display: block;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    position: absolute;
+    z-index: 9999;
+  }
+
+  .sandwich__checkbox:checked ~ .sandwich-box .sandwich-box__line:before {
+    transform: rotate(-45deg) translate3d(-5.71429px,-6px,0);
+    opacity: 0;
+  }
+
+  .sandwich__checkbox:checked ~ .sandwich-box .sandwich-box__line:after {
+    transform: translate3d(0,-20px,0) rotate(-90deg);
+  }
+
+  .sandwich__checkbox:checked ~ .sandwich-box .sandwich-box__line {
+    transform: translate3d(0,10px,0) rotate(45deg);
+  }
+
+  .sandwich__checkbox ~ .sandwich__menu {
+    display: none;
+  }
+  .sandwich__checkbox:checked ~ .sandwich__menu {
+    display: block;
+    position: absolute;
+    right: 10px;
+  }
+  .menu{
+    display: block;
+    margin-top: 55px;
+    background: rgba(0,0,0,0.7);
+    padding: 10px;
+  }
+  .menu__link{
+    display: block;
+    margin-bottom: 10px;
+  }
+  header .heading{
+    font-size: 38px;
+  }
+  .big__text{
+    font-size: 60px;
+  }
+  .meta-menu{
+    margin-top: 110px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .meta-menu{
+    margin-top: 80px;
+  }
+  main .heading{
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .navbar {
+    flex-direction: column;
+  }
+  header .heading{
+    line-height: 50px;
+  }
+  main .heading {
+    margin-top: 100px;
+  }
+  .goods{
+    flex-direction: column;
+  }
+  .goods-item{
+    width: 100%;
+  }
+  .meta-menu{
+    flex-direction: column;
+  }
+  .top-brands-link{
+    color: #1a90a2;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 320px) {
+  header .heading{
+    line-height: 44px;
+  }
+  .big__text{
+    font-size: 52px;
+    margin: 2px 0 10px;
+  }
+  .meta-menu {
+    margin-top: 50px;
+  }
+  main .heading{
+    font-size: 30px;
+  }
+}
+
+
+

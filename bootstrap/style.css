@@ -1,0 +1,315 @@
+a{
+    color: #fff;
+}
+
+.b-header .row{
+	width: 100%;
+    height: 77px;
+}
+
+.b_header__number{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.b-site__header{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.b-header__langs{
+    text-align: right;
+}
+
+.b-header__messangers{
+    width: 30%;
+}
+
+.b-header__nav{
+    text-align: right;
+}
+
+.b-nav{
+    display: inline-flex;
+}
+
+.b-nav-pills{
+    font-size: 1.0rem;
+}
+
+.b-nav__link {
+    font-size: 1.3rem;
+}
+
+.header__messanger{
+    font-size: 30px;
+}
+
+
+.b-container{
+    background: url("images/bg2.jpg") no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+
+
+.b-form-control_lang{
+
+width: 65px;
+
+display: inline-block;
+}
+
+.banner{
+    height: 500px;
+}
+
+.b-container__banner{
+    padding-top: 65px;
+    color: #fff;
+}
+
+.b-heading-banner{
+    width: 43%;
+}
+
+.b-btn__banner{
+    width: 319px;
+    height: 71px;
+    background: #c4865d;
+    border: 1px solid #c4865d;
+    border-radius: 0;
+    font-size: 1.6rem;
+    padding-top: 11px;
+}
+
+
+.b-bg{
+    background: #0c0d11;
+}
+
+.h2{
+    background-size: 3.0rem;
+    font-size: 2.6rem;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 66px;
+}
+
+p{
+    font-size: 1.2rem;
+    color: #ffffff;
+
+}
+
+.b-about{
+    padding-top: 25px;
+}
+
+.b-about__heading::after{
+    content: '';
+    width: 153px;
+    border-bottom: 2px solid #fff;
+    display: block;
+    margin: 15px auto 0;
+}
+
+.b-about__icon{
+  font-size: 35px;
+}
+
+.b-about__item{
+    text-align: center;
+}
+
+.b-row__about_1{
+    padding-top: 65px;
+    color: #fff;
+}
+
+.b-row__about_2 {
+    color: #fff;
+}
+
+.b-carousel__slide{
+    /* padding-top: 150px; */
+    /* width: 100%; */
+}
+
+/*.b-fa-clock, .b-fa-headset, .b-fa-car{ !*не разширяет размер иконок*!
+    display: block;
+    width: 99px;
+    height: 96px;
+}*/
+
+.b-warranty__heading{
+    border: 3px solid #c4865d;
+    margin-left: 260px;
+    margin-right: 250px;
+}
+
+.b-btn__warranty{
+    width: 319px;
+    height: 71px;
+    background: #c4865d;
+    border: 2px solid #c4865d;
+    border-radius: 0;
+    font-size: 1.6rem;
+    padding-top: 11px;
+    margin: 80px 150px;
+}
+
+.b-warranty ul {
+    list-style-type: none;
+    padding-top: 60px;
+    font-size: 1.4rem;
+    color: #fff;
+    padding-left: 19px;
+}
+
+.b-warranty ul li:before {
+    content: "\2013";
+    padding-right: 8px;
+    font-weight: bold;
+}
+.b-carousel__slide{
+    /* background: red; */
+    text-align: center;
+}
+.b-carousel__image{
+    width: 80%;
+}
+h3{
+    font-size: 2.0rem;
+    color: #fff;
+    text-align: center;
+    padding-top: 270px;
+}
+
+.bb__transfer{
+    background: #101115;
+    height: 495px;
+}
+
+.b-transfer{
+    padding-top: 25px;
+}
+
+.b-card{
+    border: 2px solid #c4865d;
+}
+
+.b-card__item{
+    border-bottom: 1px solid #c4865d;
+}
+
+.b-list-group-item{
+    background: #101115;
+    font-size: 2.0rem;
+    color: #fff;
+    padding-left: 30px;
+    border-bottom: 2px solid #c4865d;
+    margin-bottom: 0;
+}
+
+.b-btn-outline-secondary{
+    background: #c4865d;
+    color: #fff;
+    border: 1px solid #c4865d;
+}
+
+.b-feedback_bg{
+    background-image: url("images/feedback.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 810px;
+}
+
+.b-feedback{  /*как вставить бордеры для ячеек внутри формы*/
+    width: 700px;
+    height: 600px;
+    background: #111419;
+    border: 2px solid #c4865d;
+    margin-top: 100px;
+    padding: 40px 25px;
+}
+
+
+#exampleFormControlTextarea1{
+    resize: none;
+}
+
+.b-btn-warning{
+    width: 227px;
+    height: 50px;
+    background: #c4865d;
+    border: 2px solid #c4865d;
+    margin: 77px 0 0 135px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.b-contact-us__heading{
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: #fff;
+    padding-left: 106px;
+}
+
+.b-contact-us{
+    margin-top: 250px;
+}
+
+.b-contact-us__messangers{
+    padding-left: 270px;
+}
+
+.b-contact-us__hours{
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 185px;
+}
+
+.b__footer_bg{
+    background: #000000;
+    height: 195px;
+    color: #fff;
+}
+
+.b-link{
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+.b-address{
+    padding-top: 40px;
+    font-size: 1.1rem;
+}
+
+.b-kontact{
+    padding-top: 40px;
+    padding-left: 86px;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  text-align: center;
+  background-image: url(../images/background.jpg); 
+  background-repeat: no-repeat;
+  background-size: 100%; 
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+h1{
+  font-family: 'Arial', sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+  color: #efefe8;
+  margin: 40px 0px 20px;
+}
+
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv > div{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    font-family: 'Arial';
+    padding: 20px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}

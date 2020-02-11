@@ -1,0 +1,137 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #f8f8f8;
+	font-family: 'Arial', sans-serif;
+}
+
+h1{
+	font-size: 72px;
+	font-weight: bold;
+	color: #fff;
+}
+h2{
+	font-size: 36px;
+	font-weight: bold;
+	color: #333;
+}
+h3{
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+}
+p{
+	font-size: 18px;
+	font-weight: normal;
+	color: #333;
+}
+
+#header{
+	background-image: url(../images/header_bg.jpg);
+	height: 799px;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+}
+#header h1{
+	padding-top: 289px;
+}
+#header h3{
+	margin-top: 14px;
+	margin-bottom: 43px;
+}
+#header ul{
+	list-style: none;
+}
+#header ul li{
+	display: inline-block;
+	margin: 0 17px;
+}
+#header ul li a{
+	display: block;
+	width: 163px;
+	height: 50px;
+	text-indent: -900000px;
+}
+
+.inner{
+	width: 1064px;
+	margin: 0 auto;
+}
+
+#content{
+
+}
+
+.section{
+	overflow: hidden;
+	padding: 50px 0;
+}
+.left{
+	width: 500px;
+	float: left;
+}
+.right{
+	width: 500px;
+	float: right;
+}
+.section h2{
+	margin-top: 70px;
+	margin-bottom: 20px;
+}
+
+#footer{
+	background-image: url(../images/footer_bg.jpg);
+	height: 531px;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+#footer .inner{
+	overflow: hidden;
+}
+#footer h2{
+	float: left;
+	font-size: 36px;
+	font-weight: normal;
+	color: #fff;
+	margin-top: 247px;
+}
+#footer ul{
+	float: right;
+	list-style: none;
+	margin-top: 241px;
+	margin-right: 7px;
+}
+#footer ul li{
+	float: left;
+	margin-left: 34px;
+}
+#footer ul li a{
+	display: block;
+	width: 163px;
+	height: 50px;
+	text-indent: -900000px;
+}
+
+.Twitter{
+	background-image: url(../images/u85.png);
+}
+.Google{
+	background-image: url(../images/u80.png);
+}
+.Vkontakte{
+	background-image: url(../images/u90.png);
+}
+.Twitter:hover{
+	background-image: url(../images/u85-r.png);
+}
+.Google:hover{
+	background-image: url(../images/u80-r.png);
+}
+.Vkontakte:hover{
+	background-image: url(../images/u90-r.png);
+}

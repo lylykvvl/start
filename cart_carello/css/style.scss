@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@font-face {
+  font-family: "Evogria";
+  src: url('../fonts/Evogria.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url('../fonts/Gilroy.otf');
+  font-style: normal;
+}
+
+$font-heading: 'Evogria', sans-serif;
+$font-info: 'Bebas Neue', sans-serif;
+$font-cart: 'Gilroy', sans-serif;
+
+body{
+  background: url("../images/bg.png");
+  background-size: cover;
+  margin: 0 auto;
+  height: 1053px;
+}
+
+.container-fixed{
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0.01% 0;
+}
+
+h1{
+  font-family: $font-heading;
+  font-size: 60px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 169px;
+}
+.goods-heading h2{
+  margin-top: 90px;
+}
+
+h2 {
+  font-family: $font-info;
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+
+}
+
+
+.fruits-goods{
+  position: relative;
+}
+.fruits-goods::before{
+  content: url('../images/board.png');
+  display: block;
+  position: absolute;
+  margin-top: 385px;
+}
+.goods-content{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+
+.goods-img{
+  display: flex;
+  margin: 30px 0 0 40px;
+}
+
+
+.goods-item{
+  margin: 0 10px;
+  display: block;
+  box-sizing: border-box;
+  width: 255px;
+  height: 634px;
+
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0) 40%, rgba(0,0,0,0.1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 40%,rgba(0,0,0,0.1) 100%);
+  background: linear-gradient(to bottom,  rgba(255,255,255,0) 40%,rgba(0,0,0,0.1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#1a000000',GradientType=0 );
+
+}
+
+.goods-info{
+  font-family: $font-info;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 30px;
+}
+.prices{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.price-comments{
+
+}
+.new-price{
+  margin: 25px 5px 0 0;
+  font-size: 60px;
+  font-family: $font-info;
+  font-weight: normal;
+  line-height: 6px;
+}
+.new-price::before{
+  content: "€";
+}
+.old-price{
+  text-decoration: line-through;
+}
+.old-price::after{
+  content: "€";
+}
+
+.goods-buy{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.change-qty{
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  width: 64px;
+  height: 48px;
+  border-bottom: 3px solid #ffffff;
+  margin-right: 25px;
+}
+.goods-form{
+  display: flex;
+}
+.goods-qty{
+  display: none;
+}
+.change-gty-good{
+  display: inline-block;
+  width: 32px;
+  font-family: $font-info;
+  font-size: 24px;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+  line-height: 48px;
+}
+.goods-qty{
+  color: #000000;
+  font-family: $font-cart;
+}
+.open-scroll-btn{
+  display: inline-block;
+  width: 13px;
+  background: url("../images/arrow.png") no-repeat center;
+  border: 0;
+  outline: 0;
+
+}
+
+
+
+.add-cart-btn{
+  display: block;
+  box-sizing: border-box;
+  width: 65px;
+  height: 51px;
+  background: url("../images/buy.png") no-repeat center;
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+  outline: 0;
+ }
+
+
+.cart{
+  display: none;
+  background: #ffffff;
+  box-sizing: border-box;
+  width: 469px;
+  min-height: 1053px;
+  position: fixed;
+  top: 0;
+  right: -469px;
+  z-index: 3;
+}
+
+.cart-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff943d;
+  width: 469px;
+  height: 227px;
+  border: 0;
+  cursor: pointer;
+  font-family: $font-info;
+  font-size: 60px;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.cart-btn::before {
+  content: '';
+  display: flex;
+  width: 32px;
+  height: 32px;
+  border: 10px solid #ffffff;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  position: absolute;
+  top: 88px;
+  left: 27px;
+}
+
+.cart-list{
+  display: flex;
+  flex-direction: column;
+  padding: 0 66px 0 54px;
+  margin: 30px auto;
+  font-family: $font-cart;
+  height: 260px;
+  overflow-y: scroll;
+}
+
+.cart-item{
+  display: flex;
+  border-bottom: 1px solid #d9d9d9;
+  width: 100%;
+  padding: 37px 0 28px;
+}
+
+
+/*товар корзины*/
+.cart-item-img-block{
+  margin-right: 35px;
+}
+.goods-img-cart{
+  display: block;
+  width: 55px;
+}
+.cart-item-info{
+  font-family: $font-cart;
+}
+
+.goods-heading-cart{
+  font-family: $font-cart;
+  font-size: 18px;
+  font-weight: normal;
+  color: #000000;
+  text-transform: uppercase;
+}
+.goods-qty-row{
+  font-family: $font-cart;
+  font-size: 24px;
+}
+.cart-item:first-child{
+  display: none;
+}
+.cart-item .goods-price{
+  font-family: $font-cart;
+  font-size: 24px;
+  font-weight: bold;
+}
+.cart-item .goods-price::before{
+  content: "€";
+}
+.cart-total-cost::after{
+  content: "€";
+}
+.cart-view-link{
+  display: block;
+  margin: 21px auto 0;
+  background: #faa21b;
+  width: 300px;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  border-radius: 7px;
+  font-family: $font-cart;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.cart-view-link-block{
+  border-top: 1px solid #d9d9d9;
+}
+
+.cart-total-cost-info{
+  font-family: $font-cart;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0 0 37px 58px;
+}
+
+
+.scrollbar
+{
+  float: left;
+  height: 188px;
+  width: 122px;
+  background: rgba(0,0,0,0.2);
+  overflow-y: scroll;
+  margin-bottom: 25px;
+  font-family: $font-info;
+  font-size: 24px;
+  font-weight: normal;
+  color: #ffffff;
+  margin-left: 21px;
+}
+
+.force-overflow {
+  min-height: 450px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.force-overflow li{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 39px;
+  height: 36px;
+  border-radius: 7px;
+  margin-bottom: 14px;
+  text-align: center;
+  line-height: 36px;
+  margin-left: 17px;
+}
+
+.force-overflow li:hover{
+  background: #923e59;
+  transition: 2s;
+}
+
+#style-3::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #923f5c;
+  }
+
+
+#style-3::-webkit-scrollbar {
+  width: 6px;
+  background-color: #923f5c;
+}
+
+#style-3::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.overflow-screen{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 2;
+  display: none;
+}
+
+
+
+
+
+
+
+

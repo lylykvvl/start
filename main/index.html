@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Main</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" name="popup" id="popup" class="container__popup-checkbox">
+        <div class="container__popup-win popup-win">
+            <header class="popup-win__heading">Login</header>
+            <form class="popup-win__login-form login-form">
+                <input type="text" name="login" placeholder="Your Login" class="login-form__textfield">
+                <input type="password" name="pswd" placeholder="Your Password"  class="login-form__textfield">
+                <button  class="login-form__btn">OK</button>
+            </form>
+        </div>
+        <div class="container__info-panel info-panel">
+            <div class="container__fixed">
+                <div class="flex-block panel panel-bar">
+                    <div class="panel__panel-cell panel-cell phone-data">
+                        Call us
+                         <a href="tel:+7771001234" class="phone-data__link"> +777 (100) 1234</a>
+                    </div>
+                    <div class="panel__panel-cell panel-cell login">
+                        Welcome visitor you can <a href="#" class="login__link"> login </a> or
+                        <a href="#" class="login__link"> create an account </a>
+                    </div>
+                    <div class="panel__panel-cell panel-cell lang-currency-block">
+                        <ul class="lang-currency-block__menu-lang-currency menu-lang-currency menu flex-block">
+                            <li class="menu__item menu-lang-currency__item"><input type="radio" name="langs" value="en" class="menu__input" id="lang-en" checked><label class="menu__label" for="lang-en">en</label></li>
+                            <li class="menu__item menu-lang-currency__item"><input type="radio" name="langs" value="fr" class="menu__input" id="lang-fr"><label class="menu__label" for="lang-fr">fr</label></li>
+                            <li class="menu__item menu-lang-currency__item"><input type="radio" name="langs" value="gm" class="menu__input" id="lang-gm"><label class="menu__label" for="lang-gm">gm</label></li>
+                        </ul>
+                        <ul class="lang-currency-block__menu-lang-currency menu-lang-currency menu flex-block">
+                            <li class="menu__item menu-lang-currency__item"><input type="radio" name="currency" value="usd" class="menu__input" id="curr-usd" checked><label class="menu__label" for="curr-usd">&#36;</label></li>
+                            <li class="menu__item menu-lang-currency__item"><input type="radio" name="currency" value="eur" class="menu__input" id="curr-eur"><label class="menu__label" for="curr-eur">&#8364;</label></li>
+                            <li class="menu__item menu-lang-currency__item"><input type="radio" name="currency" value="gbr" class="menu__input" id="curr-gbr"><label class="menu__label" for="curr-gbr">&#163;</label></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="container__header header">
+            <div class="container__fixed">
+                <div class="flex-block panel">
+                    <div class="panel__panel-cell panel-cell panel-h logo">
+                        <a href="#" class="logo__link"><img src="images/logo.png" class="logo__img" alt=""></a>
+                    </div>
+                    <form class="panel__panel-cell panel-cell search">
+                        <input type="text" aria-label="" class="search__textfield" placeholder="Search entire store here...">
+                        <button class="search__btn"></button>
+                    </form>
+                    <ul class="panel__panel-cell panel-cell meta-menu flex-block">
+                        <li class="meta-menu__item"><a href="#" class="meta-menu__link">My Account</a></li>
+                        <li class="meta-menu__item"><a href="#" class="meta-menu__link">My Wishlist</a></li>
+                        <li class="meta-menu__item"><label for="popup" class="meta-menu__link">Log In</label></li>
+                        <li class="meta-menu__item"><label for="popup" class="meta-menu__link">Sign Up</label></li>
+                        <li class="meta-menu__item"><a href="#" class="meta-menu__link meta-menu__link_cart">Cart $0.00</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <nav class="container__navbar navbar">
+            <div class="container__fixed">
+                <div class="sandwich">
+                    <input type="checkbox" class="sandwich__checkbox" id="menu1">
+                    <div class="sandwich-box sandwich__sandwich-box">
+                        <div class="sandwich-box__line"></div>
+                    </div>
+                    <label for="menu1" class="sandwich__menu">
+                        <ul class="nav menu flex-block">
+                            <li class="menu__item"><a href="#" class="menu__link menu__link_active">Home</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Solids</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Liquids</a></li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Spray</a>
+                                <ul class="menu__submenu submenu">
+                                    <li class="submenu__item"><a href="#" class="submenu__link">For home</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">For garden</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">For car</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Other spray</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a href="#" class="menu__link">Electric</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">For cars</a></li>
+                        </ul>
+                    </label>
+                </div>
+            </div>
+        </nav>
+        <div class="container__show-panel show-panel">
+            <div class="container__fixed">
+                <div class="show-panel__slider-wrap slider-wrap">
+                    <input type="radio" name="point" id="slide1" class="slider-wrap__input" checked>
+                    <input type="radio" name="point" id="slide2" class="slider-wrap__input">
+                    <input type="radio" name="point" id="slide3" class="slider-wrap__input">
+                    <div class="slider">
+                        <div class="slider__slide slide slide1">
+                            <div class="slide__content">
+                                <header class="slide__heading">Breeze Noticeables</header>
+                                <div class="slide__text">
+                                    <span class="slide__text-row">The new series of natural air fresheners.</span>
+                                    <br><span class="slide__text-row">Ferbeze Noticeable Meadows & Rain </span>
+                                    <br><span class="slide__text-row">Air Freshener Refill.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__slide slide slide2">
+                            <div class="slide__content">
+                                <header class="slide__heading">Breeze Noticeables</header>
+                                <div class="slide__text">
+                                    <span class="slide__text-row">The new series of natural air fresheners.</span>
+                                    <br><span class="slide__text-row">Ferbeze Noticeable Meadows & Rain </span>
+                                    <br><span class="slide__text-row">Air Freshener Refill.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__slide slide slide3">
+                            <div class="slide__content">
+                                <header class="slide__heading">Breeze Noticeables</header>
+                                <div class="slide__text">
+                                    <span class="slide__text-row">The new series of natural air fresheners.</span>
+                                    <br><span class="slide__text-row">Ferbeze Noticeable Meadows & Rain </span>
+                                    <br><span class="slide__text-row">Air Freshener Refill.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-wrap__arrow-btns arrow-btns flex-block">
+                        <button class="arrow-btns__btn"><img src="images/arrow_light.png" alt=""></button>
+                        <button class="arrow-btns__btn"><img src="images/arrow_right.png" alt=""></button>
+                    </div>
+                   <div class="slider__slider-controls slider-controls flex-block">
+                       <label for="slide1" class="slider-controls__item"></label>
+                       <label for="slide2" class="slider-controls__item"></label>
+                       <label for="slide3" class="slider-controls__item"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container__offer offer">
+            <div class="container__fixed">
+                <ul class="offer__offer-menu offer-menu flex-block">
+                    <li class="offer-menu__offer-menu-item offer-menu-item"><a href="#" class="offer-menu-item__link">
+                        <img src="images/sale.png" alt="" class="offer-menu-item__img">
+                        <div class="offer-menu-item__text">
+                            <span class="offer-menu-item__heading">Best price</span>
+                            <span class="offer-menu-item__info">this week</span>
+                        </div>
+                    </a></li>
+                    <li class="offer-menu__offer-menu-item offer-menu-item"><a href="#" class="offer-menu-item__link">
+                        <img src="images/week.png" alt="" class="offer-menu-item__img">
+                        <div class="offer-menu-item__text">
+                            <span class="offer-menu-item__heading">New smells</span>
+                            <span class="offer-menu-item__info">in the next series</span>
+                        </div>
+                    </a></li>
+                    <li class="offer-menu__offer-menu-item offer-menu-item"><a href="#" class="offer-menu-item__link">
+                        <img src="images/scaner.png" alt="" class="offer-menu-item__img">
+                        <div class="offer-menu-item__text">
+                            <span class="offer-menu-item__heading">Only natures</span>
+                            <span class="offer-menu-item__info">air fresheners</span>
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
